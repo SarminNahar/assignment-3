@@ -12,6 +12,7 @@ var result = kilometerToMeter(5);
 console.log(result);
 
 
+
 //second problem - budgetCalculator function for electronic devices
 
 function budgetCalculator(numberOfwatch, numberOfphone, numberOflaptop) {
@@ -32,6 +33,7 @@ function budgetCalculator(numberOfwatch, numberOfphone, numberOflaptop) {
 }
 var cost = budgetCalculator(10, 5, 5);
 console.log(cost);
+
 
 
 // Third problem -  calculate hotel cost
@@ -62,3 +64,20 @@ function hotelCost(days) {
 var cost = hotelCost(35);
 console.log(cost);
 
+
+
+//fourth problem - finding mega friend
+function megaFriend(friends){
+    if(friends == 0){
+        return 'Sorry Your friends name is not found';
+    }
+    var largeName = friends[0];
+    for (var i = 0; i < friends.length; i++){
+        if (friends[i].length > largeName.length){
+            largeName = friends[i];
+        }
+    }
+    return largeName;
+}
+var friendsName = megaFriend(["sarmin", "sagor", "moniruzzaman", "ahnaf", "abrar"]);
+console.log(friendsName);
